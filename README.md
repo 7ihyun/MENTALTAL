@@ -15,20 +15,53 @@
 
 <br />
 
+***
+
+# 👨‍👩‍👧‍👦 Team Member
+| 정승연<br>(FE, 팀장) | 이세나<br>(FE) | 최자영<br>(FE) | 진희주<br>(BE, 부팀장) | 김지현<br>(BE) | 윤상원<br>(BE) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| <img alt="정승연" src="https://avatars.githubusercontent.com/u/102347529?v=4.jpg" height="100" width="100"> | <img alt="이세나" src="https://avatars.githubusercontent.com/u/111357232?v=4.jpeg" height="100" width="100"> | <img alt="최자영" src="https://avatars.githubusercontent.com/u/99870622?v=4.jpg" height="100" width="100"> | <img alt="진희주" src="https://user-images.githubusercontent.com/96982575/210198379-c536d038-bf25-4bce-bd67-1e057626bddf.jpg" height="100" width="100"> | <img alt="김지현" src="https://avatars.githubusercontent.com/u/110890163?v=4.jpg" height="100" width="100"> | <img alt="윤상원" src="https://avatars.githubusercontent.com/u/111265742?v=4.png" height="100" width="100"> |
+| [@xxyeon129](https://github.com/xxyeon129) | [@dev-sena](https://github.com/dev-sena) | [@yeong](https://github.com/yeong00) |    [@jinhuiju](https://github.com/jinhuiju) | [@7ihyun](https://github.com/7ihyun) | [@Sangwonee](https://github.com/Sangwonee)
+|<p align="left">- 소개 페이지 <br/> - 메인페이지 <br/> - 마이 페이지 <br/> - 로그인 기능 <br/> - 회원정보 수정 기능 <br/> - 회원탈퇴 기능 <br/> - UI 디자인 검토 </p>|<p align="left">- 커뮤니티 페이지 <br/>- Tags 필터링 <br/>- 자가진단 페이지 <br/>- 전문 기관 페이지 <br/> - nav <br/> - footer </p>|<p align="left">- 로그인 페이지 <br/> - 회원가입 페이지 <br/> - 전문가 페이지  </p>|<p align="left">- 게시글 CRUD <br/> - 답변 CRUD <br/> - 마이페이지 구현 <br/> - AWS(EC2, RDS)  </p>|<p align="left">- 회원 CRUD <br/>- 상담사 CURD <br/> - Vote 기능 구현 <br/> - CORS 방지 </p>|<p align="left"> <br/> - JWT 적용  <br/> - Spring Security 설정 <br/>- AWS(EC2,RDS) <br/> - CI/CD </p>|
+
+
+
+
+### Tools
+| Git | Github | Discord |
+| :---: | :---: | :---: |
+| <img alt="git logo" src="https://git-scm.com/images/logos/logomark-orange@2x.png" width="65" height="65" > | <img alt="github logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="65" height="65"> | <img alt="Discord logo" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384e89d1d54d704ece7_3437c10597c1526c3dbd98c737c2bcae.svg" height="65" width="65"> |
+
+### Front-end
+| Html | JavaScript | React | Styled-<br>Components | esLint | Prettier |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| <img alt="Html" src ="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/440px-HTML5_logo_and_wordmark.svg.png" width="65" height="65" /> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="75" height="75" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="65" height="65" /></div> | <img src="https://styled-components.com/logo.png" alt="styled-components icon" width="65" height="65" /> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/eslint-icon.svg" alt="icon" width="65" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/prettier-icon.svg" alt="icon" width="65" height="65" /></div> |
+
+### Back-end
+| Java | MySQL | AWS | Spring | Spring<br>Boot |
+| :---: | :---: | :---: | :---: | :---: |
+| <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="65" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="icon" width="65" height="65" /></div> | <img alt="spring logo" src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" height="50" width="50" > | <img alt="spring-boot logo" src="https://t1.daumcdn.net/cfile/tistory/27034D4F58E660F616" width="65" height="65" > |
+
+
+<br/>
+
+***
+
 # 💡 기획 의도
 
 
 ## 📖 Brand Story
 
-- 가까운 사람에게도 털어놓지 못하는 고민을 익명으로 편하게 털어놓을 수 있고, 비슷한 고민을 가진 사람들과 소통할 수 있는 공간입니다.
-- 기존의 커뮤니티나 SNS는 본인의 약한 부분, 고민되는 부분을 드러내기 어렵지만, MENTALTAL 서비스는 다같이 고민을 나누고 안정을 얻을 수 있는 서비스입니다.
-- 커뮤니티에서 그치는 것이 아니라, 간편한 자가진단 테스트나 가까운 상담기관 찾기, 전문 상담사 확인을 통해 다양한 사용자 경험을 제공하고 심리 상담의 문턱을 낮추는 서비스입니다.
+- 가까운 사람에게도 털어놓지 못하는 고민을 익명으로 편하게 털어놓을 수 있는 비슷한 고민을 가진 사람들과 소통할 수 있는 공간입니다.
+- 기존의 커뮤니티나 SNS는 본인의 약한 부분이나 고민을 드러내기 어렵지만, MENTALTAL 서비스는 다 같이 고민을 나누고 안정을 얻을 수 있는 서비스입니다.
+- 커뮤니티에서 그치는 것이 아닌, 간편한 자가 진단 테스트나 가까운 상담기관 찾기, 전문 상담사 확인을 통해 다양한 사용자 경험을 제공하고 심리 상담의 문턱을 낮추는 서비스입니다.
+
 
 ## 🎯 Target
 
-- 오프라인 상담이나 치료는 번거로워 온라인에서 부담 없이 상담을 받고 싶은 사람들
-- 가까운 사람에게도 말 못할 고민을 가지고 있는 사람들
-- 마음이 지쳐 있어 위로와 공감이 필요한 사람들
+- 오프라인 상담이나 치료는 번거로워 온라인에서 부담 없이 상담을 받고 싶은 사람
+- 가까운 사람에게도 말 못할 고민을 가지고 있는 사람
+- 마음이 지쳐 있어 위로와 공감이 필요한 사람
 
 
 ## 🎨 Design
@@ -52,40 +85,6 @@
 
 <br />
 
-## 👨‍👩‍👧‍👦 Team
-| 정승연<br>(FE, 팀장) | 이세나<br>(FE) | 최자영<br>(FE) | 진희주<br>(BE, 부팀장) | 김지현<br>(BE) | 윤상원<br>(BE) |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| <img alt="정승연" src="https://avatars.githubusercontent.com/u/102347529?v=4.jpg" height="100" width="100"> | <img alt="이세나" src="https://avatars.githubusercontent.com/u/111357232?v=4.jpeg" height="100" width="100"> | <img alt="최자영" src="https://avatars.githubusercontent.com/u/99870622?v=4.jpg" height="100" width="100"> | <img alt="진희주" src="https://user-images.githubusercontent.com/96982575/210198379-c536d038-bf25-4bce-bd67-1e057626bddf.jpg" height="100" width="100"> | <img alt="김지현" src="https://avatars.githubusercontent.com/u/110890163?v=4.jpg" height="100" width="100"> | <img alt="윤상원" src="https://avatars.githubusercontent.com/u/111265742?v=4.png" height="100" width="100"> |
-| [@xxyeon129](https://github.com/xxyeon129) | [@dev-sena](https://github.com/dev-sena) | [@yeong](https://github.com/yeong00) |    [@jinhuiju](https://github.com/jinhuiju) | [@7ihyun](https://github.com/7ihyun) | [@Sangwonee](https://github.com/Sangwonee)
-|<p align="left">- 소개 페이지 <br/> - 메인페이지 <br/> - 마이 페이지 <br/> - 로그인 기능 <br/> - 회원정보 수정 기능 <br/> - 회원탈퇴 기능 <br/> - UI 디자인 검토 </p>|<p align="left">- 커뮤니티 페이지 <br/>- Tags 필터링 <br/>- 자가진단 페이지 <br/>- 전문 기관 페이지 <br/> - nav <br/> - footer </p>|<p align="left">- 로그인 페이지 <br/> - 회원가입 페이지 <br/> - 전문가 페이지  </p>|<p align="left">- 게시글 CRUD <br/> - 답변 CRUD <br/> - 마이페이지 구현 <br/> - AWS(EC2, RDS)  </p>|<p align="left">- 회원 CRUD <br/>- 상담사 CURD <br/> - Vote 기능 구현 <br/> - CORS 방지 </p>|<p align="left"> <br/> - JWT 적용  <br/> - Spring Security 설정 <br/>- AWS(EC2,RDS) <br/> - CI/CD </p>|
-
-
-
-
-### 커뮤니케이션 방식
-- 월, 수, 금 10시에는 회의를 진행합니다. (오늘의 할 일, 에러 사항 간단하게 공유)
-- 자료 공유, 회의 등과 같은 모든 소통은 디스코드를 이용하고 불가피할 경우 카카오톡, 구글미트를 사용합니다. 
-- 일정에 참여할 수 없는 경우 사전에 공유합니다.
-- 정규 세션 이외 시간에도 자유롭게 디스코드 채널을 사용합니다.
-
-
-
-
-### Tools
-| Git | Github | Discord |
-| :---: | :---: | :---: |
-| <img alt="git logo" src="https://git-scm.com/images/logos/logomark-orange@2x.png" width="65" height="65" > | <img alt="github logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="65" height="65"> | <img alt="Discord logo" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384e89d1d54d704ece7_3437c10597c1526c3dbd98c737c2bcae.svg" height="65" width="65"> |
-### Front-end
-| Html | JavaScript | React | Styled-<br>Components | esLint | Prettier |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| <img alt="Html" src ="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/440px-HTML5_logo_and_wordmark.svg.png" width="65" height="65" /> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="75" height="75" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="65" height="65" /></div> | <img src="https://styled-components.com/logo.png" alt="styled-components icon" width="65" height="65" /> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/eslint-icon.svg" alt="icon" width="65" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/prettier-icon.svg" alt="icon" width="65" height="65" /></div> |
-
-### Back-end
-| Java | MySQL | AWS | Spring | Spring<br>Boot |
-| :---: | :---: | :---: | :---: | :---: |
-| <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="65" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /></div> | <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="icon" width="65" height="65" /></div> | <img alt="spring logo" src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" height="50" width="50" > | <img alt="spring-boot logo" src="https://t1.daumcdn.net/cfile/tistory/27034D4F58E660F616" width="65" height="65" > |
-<br/>
-
 ## 📝문서
 
 - [프로젝트 소개 노션페이지](https://calico-pear-ec9.notion.site/MENTALTAL-ff9e9adcc5154aa1af53568bfbc9b3f8)
@@ -103,6 +102,18 @@
 - [화면 정의서](https://docs.google.com/presentation/d/1U6crMgPL98niIQLnGEf5nGemEpeQ0IFWccpoOw457Cw/edit?usp=sharing)
 
 <br />
+
+
+
+
+## 커뮤니케이션 방식
+- 월, 수, 금 오전 10시에 회의를 진행합니다. (오늘의 할 일, 에러 사항 등을 공유)
+- 자료 공유, 회의 등과 같은 모든 소통은 디스코드를 이용하며 불가피할 경우 카카오톡, 구글미트를 사용합니다. 
+- 일정에 참여할 수 없는 경우 사전에 공유합니다.
+- 정규 세션 이외 시간에도 자유롭게 디스코드 채널을 사용합니다.
+
+
+
 
 ## 🛠 Git
 ### Branch
