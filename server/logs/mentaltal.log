@@ -41,3 +41,7 @@
 2023-05-10 21:36:11.773  INFO 14960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
 2023-05-10 21:36:11.799  INFO 14960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
 2023-05-10 21:36:11.851  INFO 14960 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-05-10 21:36:12.103  INFO 14960 --- [main] com.e1i5.mentaltal.MentaltalApplication  : Started MentaltalApplication in 8.702 seconds (JVM running for 11.311)
+2023-05-10 23:10:58.412  INFO 14960 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-10 23:10:58.499  INFO 14960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-10 23:10:58.630  INFO 14960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
