@@ -120,7 +120,7 @@ const Login = ({ setIsFooter }) => {
                 <ModalBackdrop onClick={openModalHandler}>
                     <ModalView onClick={(event) => event.stopPropagation()}>
                         <div className="description">
-                            이메일이나 비밀번호를 잘못 입력하셨습니다. <br />
+                            이메일 또는 비밀번호가 잘못되었습니다. <br />
                             다시 한 번 확인해주세요!
                         </div>
                         <button onClick={openModalHandler}>확인</button>

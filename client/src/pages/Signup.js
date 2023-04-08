@@ -132,7 +132,7 @@ const Signup = ({ setIsFooter }) => {
             {failModal ? (
                 <ModalBackdrop onClick={() => setFailModal(false)}>
                     <ModalView onClick={(event) => event.stopPropagation()}>
-                        <div className="title">아이디 혹은 비밀번호가 중복입니다.</div>
+                        <div className="title">이메일 또는 닉네임이 중복되었습니다.</div>
                         <CloseIcon onClick={handleFailModal}>확인</CloseIcon>
                     </ModalView>
                 </ModalBackdrop>
