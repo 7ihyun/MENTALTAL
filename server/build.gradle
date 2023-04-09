@@ -34,9 +34,9 @@ dependencies {
 	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
 	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
 	runtimeOnly	'io.jsonwebtoken:jjwt-jackson:0.11.5' //jwt
-	testImplementation 'org.springframework.security:spring-security-test'//jwt 추가
+	testImplementation 'org.springframework.security:spring-security-test'	//jwt 추가
 	implementation 'com.google.code.gson:gson:2.10' //gson
-	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'	// redis
 
 	// Swagger
 	implementation "io.springfox:springfox-swagger2:2.9.2"
