@@ -5,17 +5,17 @@ spring:
       path: /h2
   datasource:
     url: jdbc:h2:mem:test
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
 
   jpa:
     hibernate:
-      ddl-auto: create
-    show-sql: true
+      ddl-auto: create  # 스키마 자동 생성
+    show-sql: true      # SQL 쿼리 출력
     properties:
       hibernate:
-        format_sql: true
+        format_sql: true  # SQL pretty print
         time_zone: +09:00
 
   sql:
@@ -28,12 +28,12 @@ logging:
       springframework:
         orm:
           jpa: DEBUG
-#
-#server:
-#  servlet:
-#    encoding:
-#      force-response: true
-#
+
+server:
+  servlet:
+    encoding:
+      force-response: true
+
 #mail:
 #  address:
 #    admin: admin@gmail.com
