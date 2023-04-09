@@ -15,7 +15,7 @@ permissions:
   contents: read
   
 env:
-  S3_BUCKET_NAME: mentaltal-deploy-bucket
+  S3_BUCKET_NAME: mentaltal-deploy-bucket   # S3 버킷 이름
 
 
 jobs:
@@ -33,27 +33,33 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-      
-    - name: Run chmod to make gradlew executable
-      run: chmod +x gradlew
-    
+#     - name: Add permission    # ['~/gradlew' is not executable.] 에러가 발생한 경우 추가 (./gradlew 에 권한 부여)
+#       run: chmod +x gradlew   # ['~/gradlew' is not executable.] 에러가 발생한 경우 추가
     - name: Build with Gradle
-      run: ./gradlew build
+      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+      with:
+        arguments: build
       
-    # build 후 프로젝트 압
+#     - name: Run chmod to make gradlew executable
+#       run: chmod +x gradlew
+    
+#     - name: Build with Gradle
+#       run: ./gradlew build
+      
+    # build 후 프로젝트를 압축한다.
     - name: Make zip file
       run: zip -r ./mentaltal-deploy.zip .
       shell: bash
     
-    # Access Key와 Secret Access Key로 권한 확인
+    # Access Key와 Secret Access Key로 권한을 확인한다.
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ap-northeast-2
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}  # 등록한 Github Secret을 자동으로 불러온다. ❗secret 이름이 다른 경우 수정 필요
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # 등록한 Github Secret을 자동으로 불러온다.
+        aws-region: ap-northeast-2  # 서울 리전
     
-    # 압축한 프로젝트를 S3로 전송
+    # 압축한 프로젝트를 S3로 전송한다.
     - name: Upload to S3
       run: aws s3 cp --region ap-northeast-2 ./mentaltal-deploy.zip s3://$S3_BUCKET_NAME/mentaltal-deploy.zip
       
