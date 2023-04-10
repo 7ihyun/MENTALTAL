@@ -15,7 +15,7 @@ permissions:
   contents: read
   
 env:
-  S3_BUCKET_NAME: mentaltal-deploy-bucket   # S3 버킷 이름
+  S3_BUCKET_NAME: mentaltal-bucket   # S3 버킷 이름
 
 
 jobs:
