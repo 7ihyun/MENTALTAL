@@ -55,7 +55,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}  # 등록한 Github Secret을 자동으로 불러온다. ❗secret 이름이 다른 경우 수정 필요
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}  # 등록한 Github Secret을 자동으로 불러온다. (secret 이름이 다른 경우 수정 필요)
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # 등록한 Github Secret을 자동으로 불러온다.
         aws-region: ap-northeast-2  # 서울 리전
     
@@ -69,4 +69,3 @@ jobs:
         --deployment-config-name CodeDeployDefault.AllAtOnce
         --deployment-group-name mentaltal-group
         --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=mentaltal-deploy.zip
-        
