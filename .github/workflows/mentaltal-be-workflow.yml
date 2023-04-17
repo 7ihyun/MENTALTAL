@@ -5,68 +5,68 @@
 # This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
 
-name: Mentaltal-BE
+# name: Mentaltal-BE
 
-on:
-  push:
-    branches: [ "main" ]
+# on:
+#   push:
+#     branches: [ "main" ]
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
   
-env:
-  S3_BUCKET_NAME: mentaltal-bucket   # S3 버킷 이름
+# env:
+#   S3_BUCKET_NAME: mentaltal-bucket   # S3 버킷 이름
 
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./Server
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     defaults:
+#       run:
+#         working-directory: ./Server
     
 
-    steps:
-    - uses: actions/checkout@v3
-    - name: Set up JDK 11
-      uses: actions/setup-java@v3
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-#     - name: Add permission    # ['~/gradlew' is not executable.] 에러가 발생한 경우 추가 (./gradlew 에 권한 부여)
-#       run: chmod +x gradlew   # ['~/gradlew' is not executable.] 에러가 발생한 경우 추가
-    - name: Build with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-      with:
-        arguments: build
-      
-#     - name: Run chmod to make gradlew executable
-#       run: chmod +x gradlew
-    
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Set up JDK 11
+#       uses: actions/setup-java@v3
+#       with:
+#         java-version: '11'
+#         distribution: 'temurin'
+# #     - name: Add permission    # ['~/gradlew' is not executable.] 에러가 발생한 경우 추가 (./gradlew 에 권한 부여)
+# #       run: chmod +x gradlew   # ['~/gradlew' is not executable.] 에러가 발생한 경우 추가
 #     - name: Build with Gradle
-#       run: ./gradlew build
+#       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+#       with:
+#         arguments: build
       
-    # build 후 프로젝트를 압축한다.
-    - name: Make zip file
-      run: zip -r ./mentaltal-deploy.zip .
-      shell: bash
+# #     - name: Run chmod to make gradlew executable
+# #       run: chmod +x gradlew
     
-    # Access Key와 Secret Access Key로 권한을 확인한다.
-    - name: Configure AWS credentials
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}  # 등록한 Github Secret을 자동으로 불러온다. ❗secret 이름이 다른 경우 수정 필요
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # 등록한 Github Secret을 자동으로 불러온다.
-        aws-region: ap-northeast-2  # 서울 리전
-    
-    # 압축한 프로젝트를 S3로 전송한다.
-    - name: Upload to S3
-      run: aws s3 cp --region ap-northeast-2 ./mentaltal-deploy.zip s3://$S3_BUCKET_NAME/mentaltal-deploy.zip
+# #     - name: Build with Gradle
+# #       run: ./gradlew build
       
-    - name: Code Deploy
-      run: >
-        aws deploy create-deployment --application-name mentaltal
-        --deployment-config-name CodeDeployDefault.AllAtOnce
-        --deployment-group-name mentaltal-group
-        --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=mentaltal-deploy.zip
+#     # build 후 프로젝트를 압축한다.
+#     - name: Make zip file
+#       run: zip -r ./mentaltal-deploy.zip .
+#       shell: bash
+    
+#     # Access Key와 Secret Access Key로 권한을 확인한다.
+#     - name: Configure AWS credentials
+#       uses: aws-actions/configure-aws-credentials@v1
+#       with:
+#         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}  # 등록한 Github Secret을 자동으로 불러온다. ❗secret 이름이 다른 경우 수정 필요
+#         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # 등록한 Github Secret을 자동으로 불러온다.
+#         aws-region: ap-northeast-2  # 서울 리전
+    
+#     # 압축한 프로젝트를 S3로 전송한다.
+#     - name: Upload to S3
+#       run: aws s3 cp --region ap-northeast-2 ./mentaltal-deploy.zip s3://$S3_BUCKET_NAME/mentaltal-deploy.zip
+      
+#     - name: Code Deploy
+#       run: >
+#         aws deploy create-deployment --application-name mentaltal
+#         --deployment-config-name CodeDeployDefault.AllAtOnce
+#         --deployment-group-name mentaltal-group
+#         --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=mentaltal-deploy.zip
         
