@@ -10,7 +10,7 @@
 - **팀 명 :** E1I5
 - **프로젝트 명 :** MENTALTAL
 - **프로젝트 기간 :** 2023.01.03. ~ 2023.01.31.
-- **배포 링크 :** [💁🏻 배포 링크 ](http://mentaltal-bucket.s3-website.ap-northeast-2.amazonaws.com)
+- **배포 주소 :** [🌿MENTALTAL](http://mentaltal-bucket.s3-website.ap-northeast-2.amazonaws.com)
 
 <br />
 
