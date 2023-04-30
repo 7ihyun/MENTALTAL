@@ -70,3 +70,4 @@ jobs:
         --deployment-config-name CodeDeployDefault.AllAtOnce
         --deployment-group-name mentaltal-group
         --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=mentaltal-deploy.zip
+
