@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./Server
+        working-directory: ./server
     
 
     steps:
@@ -35,16 +35,17 @@ jobs:
         distribution: 'temurin'
 #     - name: Add permission    # ['~/gradlew' is not executable.] 에러가 발생한 경우 추가 (./gradlew 에 권한 부여)
 #       run: chmod +x gradlew   # ['~/gradlew' is not executable.] 에러가 발생한 경우 추가
-    - name: Build with Gradle
-      uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-      with:
-        arguments: build
-      
-#     - name: Run chmod to make gradlew executable
-#       run: chmod +x gradlew
     
 #     - name: Build with Gradle
-#       run: ./gradlew build
+#       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+#       with:
+#         arguments: build
+      
+    - name: Run chmod to make gradlew executable
+      run: chmod +x gradlew
+    
+    - name: Build with Gradle
+      run: ./gradlew build
       
     # build 후 프로젝트를 압축한다.
     - name: Make zip file
