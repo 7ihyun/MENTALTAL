@@ -1,4 +1,7 @@
 spring:
+  redis:
+    host: localhost
+    port: 6379
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://mentaltal-db.cli4trc7zh1k.ap-northeast-2.rds.amazonaws.com:13306/test?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
@@ -35,13 +38,13 @@ jwt:
   key: "sadsadasdasd2312412wdqwee3132132wdqwqsacxz"
   access-token-expiration-minutes: 30
   refresh-token-expiration-minutes: 300
-redis:
-  host: localhost
-  port: 6379
-  password: redis
-  timeout: 3000
-  lettuce:
-    pool:
-      max-active: 8
-      max-idle: 8
-      min-idle: 0
+#redis:
+#  host: localhost
+#  port: 6379
+#  password: redis
+#  timeout: 3000
+#  lettuce:
+#    pool:
+#      max-active: 8
+#      max-idle: 8
+#      min-idle: 0
