@@ -21,12 +21,13 @@ spring:
 #  sql:
 #    init:
 #      data-locations: classpath*:db/h2/data.sql
-#logging:
-#  level:
-#    org:
-#      springframework:
-#        orm:
-#          jpa: DEBUG
+logging:
+  file:
+    name: logs/mentaltal.log
+  level:
+    root: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n"
 #server:
 #  servlet:
 #    encoding:
